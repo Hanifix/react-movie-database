@@ -17,9 +17,10 @@ function App() {
     if (e.key === "Enter") {
       axios(apiurl + "&s=" + state.s).then(({ data }) => {
         let results = data.Search;
-
+        console.log(data.Search + data);
         setState(prevState => {
           return { ...prevState, results: results }
+          
         })
       });
     }
@@ -67,4 +68,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

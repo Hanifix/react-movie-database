@@ -12,4 +12,4 @@ function Results ({ results, openPopup }) {
 	)
 }
 
-export default Results
+export default Results;
